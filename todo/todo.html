@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>TODO List</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>TODO LIST</h2>
+      <h3>Add Item</h3>
+      <p>
+        <input id="new-task" type="text" /><button
+          id="new-task-btn"
+          onclick="addNewTask()"
+        >
+          Add
+        </button>
+        <span id="err_input"></span>
+        <input id="edit-task" type="text" /><button
+          id="edit-task-btn"
+          onclick="updateEdit()"
+        >
+          Update
+        </button>
+        <input id="edit-task2" type="text" /><button
+          id="edit-task-btn2"
+          onclick="updateEdit2()"
+        >
+          Update
+        </button>
+      </p>
+
+      <h3>Todo</h3>
+      <ul id="incomplete-tasks"></ul>
+
+      <h3>Completed</h3>
+      <ul id="completed-tasks"></ul>
+    </div>
+    <script src="../script.js"></script>
+  </body>
+</html>
